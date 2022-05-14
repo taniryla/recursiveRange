@@ -50,4 +50,9 @@
 // 20.  Can you improve the performance?
 // 21.   How have other people solved this problem?
 
-function recursiveRange(number) {}
+function recursiveRange(number) {
+  // base case
+  if (number === 0) return 0;
+  // recursion
+  return number + recursiveRange(number - 1);
+}
